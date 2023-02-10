@@ -4,7 +4,7 @@ plugins {
     signing
 }
 
-group = "kr.disdong.version.catalog"
+group = "kr.disdong"
 version = "0.0.1"
 
 catalog {
@@ -17,7 +17,7 @@ publishing {
     publications {
         create<MavenPublication>("gpr") {
             groupId = project.group as String
-            artifactId = "catalog"
+            artifactId = "spring-version-catalog"
             version = project.version as String
             from(components["versionCatalog"])
         }

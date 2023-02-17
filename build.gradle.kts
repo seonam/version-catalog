@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "kr.disdong"
-version = "0.0.1"
+version = "0.0.7"
 
 catalog {
     versionCatalog {
@@ -28,8 +28,8 @@ publishing {
             name = "GithubPackages"
             url = uri("https://maven.pkg.github.com/disdong123/version-catalog")
             credentials {
-                username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_USERNAME")
-                password = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
+                username = project.findProperty("gpr.user") as String? ?: System.getenv("DISDONG_USERNAME")
+                password = project.findProperty("gpr.key") as String? ?: System.getenv("DISDONG_TOKEN")
             }
         }
     }

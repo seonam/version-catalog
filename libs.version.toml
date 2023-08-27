@@ -4,6 +4,7 @@ kotlin-coroutine = "1.7.3"
 spring-boot = "3.1.2"
 spring-cloud = "2022.0.4"
 springdoc-openapi = "2.0.2"
+hibernate-validator = "8.0.1.Final"
 
 
 [plugins]
@@ -39,8 +40,9 @@ kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-t
 jackson-module-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin" }
 
 querydsl-apt = { module = "com.querydsl:querydsl-apt", version = "5.0.0:jakarta" }
-mysql-connector-java = { module = "mysql:mysql-connector-java" }
+mysql-connector-java = { module = "mysql:mysql-connector-j" }
 hibernate-types = { module = "com.vladmihalcea:hibernate-types-60", version = "2.20.0" }
+hibernate-validator = { module = "org.hibernate.validator:hibernate-validator", version.ref = "hibernate-validator" }
 infobip-spring-data-jpa-querydsl-boot-starter = { module = "com.infobip:infobip-spring-data-jpa-querydsl-boot-starter", version = "8.0.0" }
 
 jjwt = { module = "io.jsonwebtoken:jjwt", version = "0.9.1" }

@@ -22,8 +22,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.DISDONG_TOKEN }}
         with:
-          tag_name: ${{ steps.extract-version.outputs.version }}
-          release_name: Release ${{ steps.extract-version.outputs.version }}
+          tag_name: v${{ steps.extract-version.outputs.version }}
+          release_name: Release v${{ steps.extract-version.outputs.version }}
           draft: false
           prerelease: false
   publish:

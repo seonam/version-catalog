@@ -6,6 +6,7 @@ spring-cloud = "2022.0.4"
 springdoc-openapi = "2.0.2"
 hibernate-validator = "8.0.1.Final"
 mysql-connector-j = "8.1.0"
+h2-database = "2.2.220"
 
 
 [plugins]
@@ -42,6 +43,7 @@ jackson-module-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-
 
 querydsl-apt = { module = "com.querydsl:querydsl-apt", version = "5.0.0:jakarta" }
 mysql-connector-java = { module = "com.mysql:mysql-connector-j", version.ref = "mysql-connector-j" }
+h2-database = { module = "com.h2database:h2", version.ref = "h2-database" }
 hibernate-types = { module = "com.vladmihalcea:hibernate-types-60", version = "2.20.0" }
 hibernate-validator = { module = "org.hibernate.validator:hibernate-validator", version.ref = "hibernate-validator" }
 infobip-spring-data-jpa-querydsl-boot-starter = { module = "com.infobip:infobip-spring-data-jpa-querydsl-boot-starter", version = "8.0.0" }

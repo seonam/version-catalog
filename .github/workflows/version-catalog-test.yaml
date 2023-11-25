@@ -1,0 +1,21 @@
+name: version catalog test
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build-used-projects:
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}-${{ matrix.workflows.repo }}
+      cancel-in-progress: true
+    strategy:
+      matrix:
+        workflows: [
+          { repo: "disdong123/gradle-multi-module-template", workflow_id: "version-catalog-test.yaml" },
+        ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start version catalog test
+        run: gh workflow run ${{ matrix.workflows.workflow_id }} --repo ${{ matrix.workflows.repo }} -F version-catalog-ref=${{ github.sha }}

@@ -20,4 +20,4 @@ jobs:
       - name: Start version catalog test
         run: gh workflow run ${{ matrix.workflows.workflow_id }} --repo ${{ matrix.workflows.repo }} -F version-catalog-ref=${{ github.sha }}
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.DISDONG_TOKEN }}

@@ -8,3 +8,15 @@
  */
 
 rootProject.name = "version-catalog"
+
+include("dependencies-test")
+
+enableFeaturePreview("VERSION_CATALOGS")
+
+dependencyResolutionManagement {
+    versionCatalogs {
+        create("libs") {
+            from(files("libs.version.toml"))
+        }
+    }
+}

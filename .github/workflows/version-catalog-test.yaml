@@ -18,6 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Start version catalog test
-        run: gh workflow run ${{ matrix.workflows.workflow_id }} --repo ${{ matrix.workflows.repo }} -F version-catalog-ref=${{ github.sha }}
+        run: gh workflow run ${{ matrix.workflows.workflow_id }} --repo ${{ matrix.workflows.repo }} -F version-catalog-ref=${{ github.event.pull_request.head.sha }}
         env:
           GH_TOKEN: ${{ secrets.DISDONG_TOKEN }}

@@ -1,4 +1,4 @@
-name: publish
+name: publish to github package registry
 
 on:
   workflow_dispatch:

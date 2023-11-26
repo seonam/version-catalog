@@ -4,6 +4,7 @@
     <bytecodeTargetLevel target="1.6">
       <module name="kr.disdong.version-catalog.main" target="17" />
       <module name="kr.disdong.version-catalog.test" target="17" />
+      <module name="version-catalog.dependencies-test" target="17" />
       <module name="version-catalog.dependencies-test.main" target="17" />
       <module name="version-catalog.dependencies-test.test" target="17" />
     </bytecodeTargetLevel>

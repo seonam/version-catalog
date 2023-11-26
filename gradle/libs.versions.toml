@@ -42,7 +42,7 @@ kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-t
 
 jackson-module-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin" }
 
-querydsl-apt = { module = "com.querydsl:querydsl-apt", version = "5.0.0:jakarta" }
+querydsl-apt = { module = "com.querydsl:querydsl-apt", version = "5.0.0:jakarta" } # TODO
 mysql-connector-java = { module = "com.mysql:mysql-connector-j", version.ref = "mysql-connector-j" }
 h2-database = { module = "com.h2database:h2", version.ref = "h2-database" }
 hibernate-types = { module = "com.vladmihalcea:hibernate-types-60", version = "2.20.0" }

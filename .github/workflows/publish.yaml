@@ -19,9 +19,11 @@ jobs:
         run: |
           VERSION=$(grep -oP 'version = "\K(.*?)(?=")' build.gradle.kts)
           echo "::set-output name=version::$VERSION"
+      - name: Compare extracted version and release version
+        if: ${{ github.event.inputs.release-version != steps.extract-version.outputs.version }}
+        run: exit 1
       - name: Create Tag and Release
         if: ${{ github.event.inputs.release-version == steps.extract-version.outputs.version }}
-        id: create-release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.DISDONG_TOKEN }}

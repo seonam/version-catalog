@@ -5,11 +5,11 @@ plugins {
 }
 
 group = "kr.disdong"
-version = "0.0.15"
+version = "0.0.16"
 
 catalog {
     versionCatalog {
-        from(files("libs.version.toml"))
+        from(files("gradle/libs.versions.toml"))
     }
 }
 

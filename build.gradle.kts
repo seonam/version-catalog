@@ -9,7 +9,7 @@ version = "0.0.16"
 
 catalog {
     versionCatalog {
-        from(files("gradle/libs.version.toml"))
+        from(files("gradle/libs.versions.toml"))
     }
 }
 

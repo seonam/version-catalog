@@ -8,5 +8,3 @@
  */
 
 rootProject.name = "version-catalog"
-
-include("dependencies-test")

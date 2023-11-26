@@ -14,6 +14,7 @@ jobs:
       matrix:
         workflows: [
           { repo: "disdong123/gradle-multi-module-template", workflow_id: "version-catalog-test.yaml" },
+          { repo: "disdong123/spring-study", workflow_id: "version-catalog-test.yaml" },
         ]
     runs-on: ubuntu-latest
     steps:

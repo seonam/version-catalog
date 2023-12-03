@@ -8,3 +8,5 @@
  */
 
 rootProject.name = "version-catalog"
+
+include("dependency-test")

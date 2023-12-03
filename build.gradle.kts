@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "kr.disdong"
-version = "0.0.17"
+version = "0.0.18"
 
 catalog {
     versionCatalog {

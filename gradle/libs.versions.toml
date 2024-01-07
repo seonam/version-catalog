@@ -29,6 +29,7 @@ spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-start
 spring-boot-starter-webflux = { module = "org.springframework.boot:spring-boot-starter-webflux" }
 spring-boot-starter-validation = { module = "org.springframework.boot:spring-boot-starter-validation" }
 spring-boot-starter-data-jpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa" }
+spring-boot-starter-data-jdbc = { module = "org.springframework.boot:spring-boot-starter-data-jdbc" }
 spring-boot-starter-data-redis = { module = "org.springframework.boot:spring-boot-starter-data-redis" }
 spring-boot-starter-batch = { module = "org.springframework.boot:spring-boot-starter-batch" }
 spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
@@ -55,7 +56,11 @@ hibernate-types = { module = "com.vladmihalcea:hibernate-types-60", version = "2
 hibernate-validator = { module = "org.hibernate.validator:hibernate-validator", version.ref = "hibernate-validator" }
 
 jjwt = { module = "io.jsonwebtoken:jjwt", version = "0.9.1" }
+gson = { module = "com.google.code.gson:gson", version = "2.10.1" }
 
+mockk = { module = "io.mockk:mockk", version = "1.13.4" }
+mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version = "5.2.1" }
+fixture-monkey-starter-kotlin = { module = "com.navercorp.fixturemonkey:fixture-monkey-starter-kotlin", version = "1.0.7" }
 
 [bundles]
 kotlin-stdlib = ["kotlin-reflect", "kotlin-stdlib-jdk8"]

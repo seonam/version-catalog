@@ -52,13 +52,14 @@ jakarta-annotation-api = { module = "jakarta.annotation:jakarta.annotation-api" 
 jakarta-persistence-api = { module = "jakarta.persistence:jakarta.persistence-api" }
 infobip-spring-data-jpa-querydsl-boot-starter = { module = "com.infobip:infobip-spring-data-jpa-querydsl-boot-starter", version = "8.0.0" } # TODO remove
 h2-database = { module = "com.h2database:h2", version.ref = "h2-database" }
-hibernate-types = { module = "com.vladmihalcea:hibernate-types-60", version = "2.20.0" } # TODO remove
+embedded-redis = { module = "it.ozimov:embedded-redis", version.ref = "0.7.2" }
 hibernate-validator = { module = "org.hibernate.validator:hibernate-validator", version.ref = "hibernate-validator" }
 
 jjwt = { module = "io.jsonwebtoken:jjwt", version = "0.9.1" }
 gson = { module = "com.google.code.gson:gson", version = "2.10.1" }
 
 mockk = { module = "io.mockk:mockk", version = "1.13.4" }
+wiremock = { module = "org.wiremock:wiremock", version = "3.3.1" }
 mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version = "5.2.1" }
 fixture-monkey-starter-kotlin = { module = "com.navercorp.fixturemonkey:fixture-monkey-starter-kotlin", version = "1.0.7" }
 

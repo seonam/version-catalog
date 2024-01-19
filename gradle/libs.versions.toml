@@ -31,6 +31,7 @@ spring-boot-starter-validation = { module = "org.springframework.boot:spring-boo
 spring-boot-starter-data-jpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa" }
 spring-boot-starter-data-jdbc = { module = "org.springframework.boot:spring-boot-starter-data-jdbc" }
 spring-boot-starter-data-redis = { module = "org.springframework.boot:spring-boot-starter-data-redis" }
+spring-boot-starter-data-mongodb = { module = "org.springframework.boot:spring-boot-starter-data-mongodb" }
 spring-boot-starter-batch = { module = "org.springframework.boot:spring-boot-starter-batch" }
 spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
 
@@ -53,6 +54,7 @@ jakarta-persistence-api = { module = "jakarta.persistence:jakarta.persistence-ap
 infobip-spring-data-jpa-querydsl-boot-starter = { module = "com.infobip:infobip-spring-data-jpa-querydsl-boot-starter", version = "8.0.0" } # TODO remove
 h2-database = { module = "com.h2database:h2", version.ref = "h2-database" }
 embedded-redis = { module = "it.ozimov:embedded-redis", version = "0.7.2" }
+de-flapdoodle-embed-mongo-spring30x = { module = "de.flapdoodle.embed:de.flapdoodle.embed.mongo.spring30x", version = "4.11.0" }
 hibernate-validator = { module = "org.hibernate.validator:hibernate-validator", version.ref = "hibernate-validator" }
 
 jjwt = { module = "io.jsonwebtoken:jjwt", version = "0.9.1" }

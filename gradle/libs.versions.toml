@@ -54,7 +54,7 @@ jakarta-persistence-api = { module = "jakarta.persistence:jakarta.persistence-ap
 infobip-spring-data-jpa-querydsl-boot-starter = { module = "com.infobip:infobip-spring-data-jpa-querydsl-boot-starter", version = "8.0.0" } # TODO remove
 h2-database = { module = "com.h2database:h2", version.ref = "h2-database" }
 embedded-redis = { module = "it.ozimov:embedded-redis", version = "0.7.2" }
-de.flapdoodle.embed.mongo.spring30x = { module = "de.flapdoodle.embed:de.flapdoodle.embed.mongo.spring30x", version = "4.11.0" }
+de-flapdoodle-embed-mongo-spring30x = { module = "de.flapdoodle.embed:de.flapdoodle.embed.mongo.spring30x", version = "4.11.0" }
 hibernate-validator = { module = "org.hibernate.validator:hibernate-validator", version.ref = "hibernate-validator" }
 
 jjwt = { module = "io.jsonwebtoken:jjwt", version = "0.9.1" }

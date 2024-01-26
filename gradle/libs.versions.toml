@@ -1,7 +1,7 @@
 [versions]
-kotlin = "1.8.20"
+kotlin = "1.9.22"
 kotlin-coroutine = "1.7.3"
-spring-boot = "3.1.2"
+spring-boot = "3.2.1"
 spring-cloud = "2022.0.4"
 springdoc-openapi = "2.0.2"
 hibernate-validator = "8.0.1.Final"
@@ -51,7 +51,6 @@ querydsl-jpa = { module = "com.querydsl:querydsl-jpa", version.ref = "querydsl" 
 querydsl-apt = { module = "com.querydsl:querydsl-apt", version.ref = "querydsl" }
 jakarta-annotation-api = { module = "jakarta.annotation:jakarta.annotation-api" }
 jakarta-persistence-api = { module = "jakarta.persistence:jakarta.persistence-api" }
-infobip-spring-data-jpa-querydsl-boot-starter = { module = "com.infobip:infobip-spring-data-jpa-querydsl-boot-starter", version = "8.0.0" } # TODO remove
 h2-database = { module = "com.h2database:h2", version.ref = "h2-database" }
 embedded-redis = { module = "it.ozimov:embedded-redis", version = "0.7.2" }
 de-flapdoodle-embed-mongo-spring30x = { module = "de.flapdoodle.embed:de.flapdoodle.embed.mongo.spring30x", version = "4.11.0" }

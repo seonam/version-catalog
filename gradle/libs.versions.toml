@@ -2,7 +2,7 @@
 kotlin = "1.9.22"
 kotlin-coroutine = "1.7.3"
 spring-boot = "3.2.1"
-spring-cloud = "2022.0.4"
+spring-cloud = "2023.0.0"
 springdoc-openapi = "2.0.2"
 hibernate-validator = "8.0.1.Final"
 mysql-connector-j = "8.1.0"

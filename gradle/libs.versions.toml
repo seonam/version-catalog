@@ -3,6 +3,7 @@ kotlin = "1.9.22"
 kotlin-coroutine = "1.7.3"
 spring-boot = "3.2.1"
 spring-cloud = "2023.0.0"
+spring-dependency-management = "1.1.0"
 springdoc-openapi = "2.0.2"
 hibernate-validator = "8.0.1.Final"
 mysql-connector-j = "8.1.0"
@@ -12,6 +13,7 @@ querydsl = "5.0.0"
 
 [plugins]
 spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management" }
 
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-plugin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
@@ -36,6 +38,7 @@ spring-boot-starter-batch = { module = "org.springframework.boot:spring-boot-sta
 spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
 
 spring-cloud-dependencies = { module = "org.springframework.cloud:spring-cloud-dependencies", version.ref = "spring-cloud" }
+spring-cloud-starter-openfeign = { module = "org.springframework.cloud:spring-cloud-starter-openfeign" }
 
 kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
 kotlin-stdlib-jdk8 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlin" }

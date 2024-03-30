@@ -17,7 +17,7 @@ jobs:
 #          { repo: "disdong123/spring-study", workflow_id: "version-catalog-test.yaml" },
 #          { repo: "disdong123/spring-labs", workflow_id: "version-catalog-test.yaml" },
           { repo: "disdong123/virtual-drivers", workflow_id: "version-catalog-test.yaml" },
-          { repo: "disdong123/virtual-drivers-chatbot", workflow_id: "version-catalog-test.yaml" },
+#          { repo: "disdong123/virtual-drivers-chatbot", workflow_id: "version-catalog-test.yaml" },
         ]
     runs-on: ubuntu-latest
     steps:

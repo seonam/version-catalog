@@ -7,3 +7,5 @@ build
 dependency-test/**
 
 .idea
+
+node_modules

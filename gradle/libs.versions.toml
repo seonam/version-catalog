@@ -60,7 +60,7 @@ querydsl-apt = { module = "com.querydsl:querydsl-apt", version.ref = "querydsl" 
 jakarta-annotation-api = { module = "jakarta.annotation:jakarta.annotation-api" }
 jakarta-persistence-api = { module = "jakarta.persistence:jakarta.persistence-api" }
 h2-database = { module = "com.h2database:h2", version.ref = "h2-database" }
-embedded-redis = { module = "it.ozimov:embedded-redis", version = "0.7.2" }
+embedded-redis = { module = "com.github.codemonstur:embedded-redis", version = "1.4.3" }
 de-flapdoodle-embed-mongo-spring30x = { module = "de.flapdoodle.embed:de.flapdoodle.embed.mongo.spring30x", version = "4.11.0" }
 
 jjwt = { module = "io.jsonwebtoken:jjwt", version = "0.9.1" }

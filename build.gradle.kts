@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "kr.seonam"
-version = "0.0.32"
+version = "0.1.0"
 
 catalog {
     versionCatalog {

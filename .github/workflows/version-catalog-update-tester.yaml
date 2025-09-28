@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         workflows: [
-          { repo: "seonam/spring-labs", workflow_id: "version-catalog-update-tester.yaml" },
+#          { repo: "seonam/spring-labs", workflow_id: "version-catalog-update-tester.yaml" },
           { repo: "seonam/springboot-simple-template", workflow_id: "version-catalog-update-tester.yaml" },
         ]
     runs-on: ubuntu-latest

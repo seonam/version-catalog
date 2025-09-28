@@ -15,7 +15,8 @@ Gradle 은 루트의 하위 디렉토리에서 libs.versions.toml 파일이 발�
             maven {
                 url = uri("https://maven.pkg.github.com/seonam/version-catalog")
                 credentials {
-                    // PAT, github username 을 환경변수 (.zshrc 등)로 저장해야합니다.  
+                    // PAT, github username 을 환경변수 (.zshrc 등)로 저장해야합니다.
+                    // jitpack 을 이용하는 경우 불필요.
                     username = System.getenv("SEONAM_USERNAME")
                     password = System.getenv("SEONAM_TOKEN")
                 }

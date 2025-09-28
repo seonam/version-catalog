@@ -6,15 +6,15 @@ on:
       - main
 
 jobs:
-  version-catalog-test:
+  version-catalog-update-tester:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}-${{ matrix.workflows.repo }}
       cancel-in-progress: true
     strategy:
       matrix:
         workflows: [
-          { repo: "seonam/spring-labs", workflow_id: "version-catalog-test.yaml" },
-          { repo: "seonam/springboot-simple-template", workflow_id: "version-catalog-test.yaml" },
+          { repo: "seonam/spring-labs", workflow_id: "version-catalog-update-tester.yaml" },
+          { repo: "seonam/springboot-simple-template", workflow_id: "version-catalog-update-tester.yaml" },
         ]
     runs-on: ubuntu-latest
     steps:

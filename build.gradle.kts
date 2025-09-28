@@ -4,7 +4,7 @@ plugins {
     signing
 }
 
-group = "kr.disdong"
+group = "kr.seonam"
 version = "0.0.31"
 
 catalog {
@@ -26,10 +26,10 @@ publishing {
     repositories {
         maven {
             name = "GithubPackages"
-            url = uri("https://maven.pkg.github.com/disdong123/version-catalog")
+            url = uri("https://maven.pkg.github.com/seonam/version-catalog")
             credentials {
-                username = project.findProperty("gpr.user") as String? ?: System.getenv("DISDONG_USERNAME")
-                password = project.findProperty("gpr.key") as String? ?: System.getenv("DISDONG_TOKEN")
+                username = project.findProperty("gpr.user") as String? ?: System.getenv("SEONAM_USERNAME")
+                password = project.findProperty("gpr.key") as String? ?: System.getenv("SEONAM_TOKEN")
             }
         }
     }

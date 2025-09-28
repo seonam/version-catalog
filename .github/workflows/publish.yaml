@@ -26,7 +26,7 @@ jobs:
         if: ${{ github.event.inputs.release-version == steps.extract-version.outputs.version }}
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.DISDONG_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SEONAM_TOKEN }}
         with:
           tag_name: v${{ steps.extract-version.outputs.version }}
           release_name: Release v${{ steps.extract-version.outputs.version }}
@@ -48,6 +48,6 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         env:
-          DISDONG_USERNAME: ${{ secrets.DISDONG_USERNAME }}
-          DISDONG_TOKEN: ${{ secrets.DISDONG_TOKEN }}
+          SEONAM_USERNAME: ${{ secrets.SEONAM_USERNAME }}
+          SEONAM_TOKEN: ${{ secrets.SEONAM_TOKEN }}
         run: ./gradlew publish

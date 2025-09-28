@@ -13,17 +13,18 @@ Gradle 은 루트의 하위 디렉토리에서 libs.versions.toml 파일이 발�
     dependencyResolutionManagement {
         repositories {
             maven {
-                url = uri("https://maven.pkg.github.com/disdong123/version-catalog")
+                url = uri("https://maven.pkg.github.com/seonam/version-catalog")
                 credentials {
-                    // PAT, github username 을 환경변수 (.zshrc 등)로 저장해야합니다.  
-                    username = System.getenv("DISDONG_USERNAME")
-                    password = System.getenv("DISDONG_TOKEN")
+                    // PAT, github username 을 환경변수 (.zshrc 등)로 저장해야합니다.
+                    // jitpack 을 이용하는 경우 불필요.
+                    username = System.getenv("SEONAM_USERNAME")
+                    password = System.getenv("SEONAM_TOKEN")
                 }
             }
         }
         versionCatalogs {
             create("libs") {
-                from("kr.disdong:spring-version-catalog:0.0.2")
+                from("kr.seonam:spring-version-catalog:0.0.2")
             }
         }
     }
@@ -52,10 +53,10 @@ Pull request 를 이용해야합니다.
 1. version-catalog-test workflow 에서 테스트하고자 하는 repository 를 추가합니다.
     ```
     workflows: [
-      { repo: "disdong123/gradle-multi-module-template", workflow_id: "version-catalog-test.yaml" },
+      { repo: "seonam/gradle-multi-module-template", workflow_id: "version-catalog-test.yaml" },
     ]
     ```
-2. 테스트하고자 하는 repository 에 version-catalog-test workflow 를 추가합니다. (ex. https://github.com/disdong123/gradle-multi-module-template/blob/main/.github/workflows/version-catalog-test.yaml)
+2. 테스트하고자 하는 repository 에 version-catalog-test workflow 를 추가합니다. (ex. https://github.com/seonam/gradle-multi-module-template/blob/main/.github/workflows/version-catalog-test.yaml)
 3. version-catalog repository 의 settings > Branches 의 아래 섹션에서 해당 repository 의 workflow 를 추가합니다.
     ![img.png](branch-rules.png)
 

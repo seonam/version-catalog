@@ -4,7 +4,7 @@ kotlin-coroutine = "1.10.2"
 spring-boot = "4.0.1"
 spring-cloud = "2025.0.0"
 spring-dependency-management = "1.1.7"
-springdoc-openapi = "2.8.13"
+springdoc-openapi = "3.0.0"
 mysql-connector-j = "9.4.0"
 h2-database = "2.2.220"
 querydsl = "5.1.0"
@@ -26,6 +26,7 @@ ktlint = { id = "org.jlleitschuh.gradle.ktlint", version = "13.1.0" }
 sprinb-boot-dependencies = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot" }
 spring-boot-configuration-processor = { module = "org.springframework.boot:spring-boot-configuration-processor", version.ref = "spring-boot" }
 springdoc-openapi-starter-webmvc-ui = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version.ref = "springdoc-openapi" }
+springdoc-openapi-starter-webmvc-test = { module = "org.springdoc:springdoc-openapi-starter-webmvc-test" }
 
 spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
 spring-boot-starter-webflux = { module = "org.springframework.boot:spring-boot-starter-webflux" }
